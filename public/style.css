@@ -1,0 +1,432 @@
+*{
+  box-sizing:border-box;
+}
+body{
+  margin:0;
+}
+
+h2 {font: bold 18px Arial; color: blue; border-bottom:#CCC solid 1px; margin-top:5px;}
+
+label {
+ width:150px;
+ margin-top: 3px;
+ padding:3px;
+}
+textarea {padding:8px; width:300px;}
+input, textarea {
+ -moz-transition: padding .25s;
+ -webkit-transition: padding .25s;
+ -o-transition: padding .25s;
+ transition: padding .25s;
+}
+
+.main{
+    display: grid;
+    width: 100%;
+    //border: 1px solid #000; /* Белая рамка */
+}
+.headmenu{
+    width: 100%;
+	background: #ECD5DE; 
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #000; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+	font-size:24pt;
+	background: #E0D2C7;
+	margin-top: 2px;
+	margin-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    //padding-left: 5px;
+    //padding-right: 5px;
+    text-align: center;
+}
+.topmenu{
+    width: 100%;
+	background: #ECD5DE; 
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #000; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+	//font-size:12pt;
+	background: #E0D2C7;
+	margin-top: 2px;
+	margin-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    //padding-left: 5px;
+    //padding-right: 5px;
+    text-align: center;
+}
+.mainmenu{
+    width: 100%;
+    background: #C7E3E4; 
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #000; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+	margin-top: 2px;
+	margin-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    //padding-left: 5px;
+    //padding-right: 5px;
+    text-align: center;
+}
+.settingsmenu{
+    width: 100%;
+    background: #C7E3E4; 
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #000; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+	margin-top: 2px;
+	margin-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    //padding-left: 5px;
+    //padding-right: 5px;
+    text-align: center;
+}
+.actionsmenu{
+    width: 100%;
+    background: #C7E3E4; 
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #000; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+	margin-top: 2px;
+	margin-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    //padding-left: 5px;
+    //padding-right: 5px;
+    text-align: center;
+}
+.statusmenu{
+    width: 100%;
+    background: #C7E3E4; 
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #000; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+	margin-top: 2px;
+	margin-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    //padding-left: 5px;
+    //padding-right: 5px;
+    text-align: center;
+}
+.bottomstatus{
+    width: 100%;
+    background: #C7E3E4; 
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #000; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+	margin-top: 2px;
+	margin-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    //padding-left: 5px;
+    //padding-right: 5px;
+    text-align: center;
+}
+.grid{
+  //border: 1px solid #000; /* Белая рамка */
+  width: 100%;
+  //display: grid;
+  display: flex;
+  //grid-template-columns: repeat(3, 1fr);
+  //grid-gap: 10px 10px;
+  //justify-content: space-between;
+  //justify-content: center;
+  flex-direction: row;
+  align-items: stretch;
+  //border: 1px solid #000; /* Белая рамка */
+}
+.item{
+  //height: 100%;
+  background-color:#cda;
+}
+.val1{
+	vertical-align: middle;
+    border: 1px solid #000; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    min-height: 45px;
+}
+.val2{
+    border: 1px solid #000; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    min-height: 45px;
+}
+.valover {
+  background: #C7E300;
+}
+#div1 { background: #C7E3E4; 
+
+    //width: 50%;
+    flex-basis: 33%;
+    //height: 250px;
+    //position: absolute;
+    //background: #EEFF00;
+    //top: 10;
+    //left: 10;
+    //margin: 10px 0 0 10px;
+    //margin-left: auto;
+    //margin-right: auto;
+    
+    border: 3px solid #000; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+	//font-size:12pt;
+	//margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+
+}
+#div2 { background: #E0D2C7; 
+    flex-basis: 33%;
+	flex-grow: 1;
+    //width: 33%;
+    //width: 480px;
+    //height: 250px;
+    //position: absolute;
+    //background: #EEFF00;
+    //top: 10;
+    //left: 10;
+    //margin: 10px 0 0 10px;
+    //margin-left: auto;
+    //margin-right: auto;
+    
+    border: 3px solid #000; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+	//font-size:12pt;
+	//margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+#div3 { background: #ECD5DE; 
+    flex-basis: 33%;
+    //width: 50%;
+    //width: 480px;
+    //height: 250px;
+    //position: absolute;
+    //background: #EEFF00;
+    //top: 10;
+    //left: 10;
+    //margin: 10px 0 0 10px;
+    //margin-left: auto;
+    //margin-right: auto;
+    
+    border: 3px solid #000; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+	//font-size:12pt;
+	//margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.div5{
+    margin-left: auto;
+    margin-right: auto;
+	display: none;
+    width: 100%;
+    //height: 250px;
+    left: 0px;
+    top: 0px;
+    //position: absolute;
+    background: #C7E3E4; 
+    border: 3px solid #000; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+	//font-size:12pt;
+	//margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#button1 {
+  display: inline-block;
+  color: black;
+  font-size: 100%;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .25em .5em;
+  outline: none;
+  border: 1px solid rgb(250,172,17);
+  border-radius: 7px;
+  background: rgb(255,212,3) linear-gradient(rgb(255,212,3), rgb(248,157,23));
+  box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+  transition: box-shadow .2s, border-color .2s;
+} 
+#button1:hover {
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,.5);
+}
+#button1:active {
+  padding: calc(.25em + 1px) .5em calc(.25em - 1px);
+  border-color: rgba(177,159,0,1);
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgba(255,255,0,.45);
+}
+
+.left{
+	text-align: center;
+	display:  table-cell;
+	vertical-align: middle;
+	float: left;
+	//padding-left: 0px;
+	margin-left: 0px;
+    height: 32px;
+	//margin: auto;
+}
+.right{
+	display:  table-cell;
+	vertical-align: middle;
+	padding-left: 5px;
+	//margin-left: 45px;
+    height: 32px;
+	//margin: auto;
+}
+.menubutton {
+  display: inline-block;
+  color: black;
+  font-size: 100%;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .25em .5em;
+  outline: none;
+  border: 1px solid rgb(250,172,17);
+  border-radius: 7px;
+  background: rgb(1,1,3) linear-gradient(rgb(1,212,3), rgb(248,157,23));
+  box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+  transition: box-shadow .2s, border-color .2s;
+} 
+.menubutton:hover {
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,.5);
+}
+.menubutton:active {
+  padding: calc(.25em + 1px) .5em calc(.25em - 1px);
+  border-color: rgba(177,159,0,1);
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgba(255,255,0,.45);
+}
+.div6{ 
+	background: #ECD5DE; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: 3px solid #000; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+	//font-size:12pt;
+	background: #E0D2C7;
+	margin-top: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    //padding-left: 5px;
+    //padding-right: 5px;
+    text-align: center;
+}
+.prices{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+	//margin-top: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.contacts{
+    //text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+	//margin-top: 5px;
+    //padding-top: 2px;
+    //padding-bottom: 2px;
+}
+.status{ 
+	background: #ECD5DE; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    border: 3px solid #000; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+	//font-size:12pt;
+	background: white;
+	margin-top: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size:12pt;
+    //padding-left: 5px;
+    //padding-right: 5px;
+    //text-align: center;
+}
+.button22 {
+  margin-top: 5px;
+  display: inline-block;
+  color: black;
+  font-size: 12pt;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .25em .5em;
+  outline: none;
+  border: 1px solid rgb(250,172,17);
+  border-radius: 7px;
+  background: rgb(255,212,3) linear-gradient(rgb(255,212,3), rgb(248,157,23));
+  box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+  transition: box-shadow .2s, border-color .2s;
+} 
+.button22:hover {
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,.5);
+}
+.button22:active {
+  padding: calc(.25em + 1px) .5em calc(.25em - 1px);
+  border-color: rgba(177,159,0,1);
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgba(255,255,0,.45);
+}
+
+.button_yellow {
+  display: inline-block;
+  color: black;
+  font-size: 100%;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .25em .5em;
+  outline: none;
+  border: 1px solid rgb(250,172,17);
+  border-radius: 7px;
+  background: rgb(255,212,3) linear-gradient(rgb(255,212,3), rgb(248,157,23));
+  box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+  transition: box-shadow .2s, border-color .2s;
+} 
+.button_yellow:hover {
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,.5);
+}
+.button_yellow:active {
+  padding: calc(.25em + 1px) .5em calc(.25em - 1px);
+  border-color: rgba(177,159,0,1);
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgba(255,255,0,.45);
+}

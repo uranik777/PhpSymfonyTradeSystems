@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %} 
+
+{% block stylesheets %}
+   <link rel="stylesheet" href="{{ asset('style.css') }}"/>
+{% endblock %}
+
+{% block javascripts %}
+   <script src="jquery.js" type="text/javascript"></script>
+{% endblock %}
+
+{% block title %}Торговый робот{% endblock %}
+
+{% block body %}    
+
+<div class="topmenu">
+	{{ form_start(form1) }}    
+	<input type = "submit" class="button_yellow" name = "register" value = "Регистрация">    
+	<input type = "submit" class="button_yellow" name = "login" value = "Вход">    
+	<input type = "submit" class="button_yellow" name = "logout" value = "Выход">    
+	{{ form_end(form1) }} 
+</div>
+
+
+<div class="settingsmenu">
+	<h2>Настройки пользователя:</h2><br>
+	{{ form_start(form) }}    
+	{{ form_end(form) }} 
+</div>
+
+<div class="actionsmenu">
+	{{ form_start(form2) }}    
+	<input type = "submit" class="button_yellow" name = "increase" value = "Пополнить баланс">    
+	<input type = "submit" class="button_yellow" name = "decrease" value = "Вывести средства">    
+	<input type = "submit" class="button_yellow" name = "start" value = "Начать торги">    
+	<input type = "submit" class="button_yellow" name = "stop" value = "Прекратить торги">    
+	{{ form_end(form2) }} 
+</div>
+
+<div class="statusmenu">
+<h2>Состояние акаунта:</h2><br>
+Имя пользователя: <b>{{ username }}</b><br>
+Торги: {{ states['trade'] }}<br>
+Текущий баланс: {{ states['balance'] }}<br>
+Заблокировано ордерами: {{ states['busybalance'] }}<br>
+</div>
+
+<div class="bottomstatus">
+<b>{{ systemmessage }}</b><br>
+</div>
+
+
+{% endblock %}

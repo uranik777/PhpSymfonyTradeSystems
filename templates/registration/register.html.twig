@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block head %}
+{% endblock %}
+
+{% block title %}Register{% endblock %}
+
+{% block stylesheets %}
+   <link rel="stylesheet" href="{{ asset('style.css') }}"/>
+{% endblock %}
+
+
+{% block body %}
+
+<div class="headmenu">
+Автоматическая торговая система
+</div>
+
+<div class="mainmenu">
+
+    <h1>Регистрация пользователя</h1>
+
+    <hr>
+    <div id='register'>
+    {{ form_start(registrationForm) }}
+		Имя пользователя
+		{{ form_errors(registrationForm.username) }}
+		{{ form_widget(registrationForm.username) }}        
+        
+        <br><br>Email:
+		{{ form_errors(registrationForm.email) }}
+		{{ form_widget(registrationForm.email) }}        
+        
+        <br><br>Пароль
+		{{ form_errors(registrationForm.plainPassword) }}
+		{{ form_widget(registrationForm.plainPassword) }}        
+
+		<br><br>
+        <button class="button_yellow">Регистрация</button>
+    {{ form_end(registrationForm) }}
+    </div>
+</div>
+
+{% endblock %}
